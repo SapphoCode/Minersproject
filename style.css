@@ -1,0 +1,195 @@
+/*
+ * --------------------------------
+ * Estilos Gerais e Tipografia
+ * --------------------------------
+ */
+
+body {
+    /* Fundo com cores inspiradas no Minecraft */
+    background-color: #f0f0e0; /* Cor de areia/areia movediça clara */
+    color: #333333; /* Cor de texto padrão (quase preto) */
+    font-family: 'Arial', sans-serif; /* Fonte simples e legível */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #008000; /* Verde do bloco de grama para títulos */
+    text-shadow: 2px 2px #555555; /* Sombra simples para destaque */
+    font-family: 'Georgia', serif; /* Fonte com um pouco mais de personalidade */
+    border-bottom: 2px solid #a0522d; /* Linha marrom abaixo dos títulos */
+    padding-bottom: 5px;
+}
+
+a {
+    color: #008000; /* Links verdes */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3cb371; /* Verde mais claro ao passar o mouse */
+    text-decoration: underline;
+}
+
+/*
+ * --------------------------------
+ * Layout do Cabeçalho (Header)
+ * --------------------------------
+ */
+
+header {
+    background-color: #a0522d; /* Marrom de madeira/terra para o cabeçalho */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #000000; /* Borda preta forte */
+}
+
+header h1 {
+    color: #ffffff;
+    text-shadow: 3px 3px #000000;
+    margin: 0;
+    border-bottom: none;
+}
+
+/*
+ * --------------------------------
+ * Navegação (Nav)
+ * --------------------------------
+ */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #8b4513; /* Marrom mais escuro ao passar o mouse */
+    text-decoration: none;
+}
+
+/*
+ * --------------------------------
+ * Conteúdo Principal (Main e Sections)
+ * --------------------------------
+ */
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 3px solid #008000; /* Borda verde */
+    border-radius: 8px; /* Cantos levemente arredondados */
+    box-shadow: 5px 5px 0 #555555; /* Efeito de sombra "pixelado" */
+}
+
+/* Estilo para a lista de informações do servidor */
+#servidor ul {
+    list-style-type: '⛏️ '; /* Substitui o ponto por um emoji de picareta (depende da compatibilidade do navegador) */
+    padding-left: 20px;
+}
+
+#servidor ul li {
+    margin-bottom: 10px;
+}
+
+/*
+ * --------------------------------
+ * Galeria de Imagens
+ * --------------------------------
+ */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #a0522d; /* Borda marrom */
+    display: block;
+}
+
+/*
+ * --------------------------------
+ * Rodapé (Footer)
+ * --------------------------------
+ */
+
+footer {
+    background-color: #333333; /* Cor escura de carvão/rocha */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    border-top: 4px solid #000000;
+}
+/*
+ * --------------------------------
+ * Estilos para o Modo Noturno (dark-mode)
+ * --------------------------------
+ */
+
+body.dark-mode {
+    background-color: #1c1c1c; /* Fundo escuro (Rocha/Pedra) */
+    color: #e0e0e0; /* Texto claro */
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #ffd700; /* Títulos em cor de ouro */
+    text-shadow: 2px 2px #000000;
+    border-bottom-color: #8b4513; /* Marrom escuro */
+}
+
+body.dark-mode a {
+    color: #6495ed; /* Azul claro para links */
+}
+
+body.dark-mode section {
+    background-color: #333333; /* Fundo mais escuro para as seções */
+    border-color: #ffd700; /* Borda dourada */
+    box-shadow: 5px 5px 0 #000000;
+}
+/*
+ * --------------------------------
+ * Estilos para Animação de Entrada
+ * --------------------------------
+ */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
